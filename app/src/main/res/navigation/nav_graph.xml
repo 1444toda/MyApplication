@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentFirst">
+
+    <fragment
+        android:id="@+id/fragmentFirst"
+        android:name="com.example.myapplication.FragmentFirst"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentSecond"
+            app:destination="@id/fragmentSecond"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_fragmentFirst_to_fragmentSecond2"
+            app:destination="@id/fragmentSecond2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSecond"
+        android:name="com.example.myapplication.FragmentSecond"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+    <fragment
+        android:id="@+id/fragmentSecond2"
+        android:name="com.example.myapplication.fragment_second2"
+        android:label="fragment_second2"
+        tools:layout="@layout/fragment_second2" />
+</navigation>
